@@ -24,12 +24,15 @@ import java.util.Scanner;
 //        return sumaRecursiva(n/10)+(n%10); 
 //    }
 
-/*Esta seria otra forma, debes quitar los comentarios de la linea 12-25*/
+/*Esta seria otra forma, debes quitar los comentarios de la linea 12-25 para que uses aquel
+* o comenta este.
+*/
+
 public class InterfazApp
 { private int num;
     
-    public InterfazApp() {
-    }
+    public InterfazApp() 
+    {/*Constructor por buenas practicas*/}
     
     public static void main(String[] args) 
     {   Scanner sc = new Scanner(System.in);
@@ -44,5 +47,5 @@ public class InterfazApp
             return n;
         }
         return sumaRecursiva(n/10)+(n%10); 
-    }        
+    }//¿Te ha funcionado o no?        
 }
