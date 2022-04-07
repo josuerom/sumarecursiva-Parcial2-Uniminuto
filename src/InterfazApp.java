@@ -1,51 +1,31 @@
 /**
-* @Autor - GitHub: JosuéRomeroJ
-* @Fecha: 28/Mayo/2021
-* @Contacto: josueromram@uotlook.es
-* @Materia: Estructuras de Datos
-* @Profesor: Giovanni Fajardo Utria
+* @author Josué Romero
+* @date 28/Mayo/2021
+* @contact josueromram@uotlook.es
+* @matter Estructuras de Datos
+* @teacher Giovanni Fajardo Utria
 */
 
-import javax.swing.JOptionPane;
 import java.util.Scanner;
 
-//public class InterfazApp
-//{
-//    public static void main(String[] args) 
-//    {   
-//        int aux = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los numero :: "));
-//        JOptionPane.showMessageDialog(null, "Suma Total >> " + sumaRecursiva(aux));
-//    }
-//    
-//    public static int sumaRecursiva(int n)
-//    {   if (n < 10){
-//            return n;
-//        }
-//        return sumaRecursiva(n/10)+(n%10); 
-//    }
-
-/*Esta seria otra forma, debes quitar los comentarios de la linea 12-25 para que uses aquel
-* o comenta este.
-*/
-
-public class InterfazApp
-{ private int num;
+public class InterfazApp {
     
-    public InterfazApp() 
-    {/*Constructor por buenas practicas*/}
-    
-    public static void main(String[] args) 
-    {   Scanner sc = new Scanner(System.in);
-        int jrj;
-        System.out.print("Ingrese los numeros :: "); jrj = sc.nextInt();
-        System.out.println("La suma es => " + sumaRecursiva(jrj) + "\n");
-        
+    public InterfazApp() {
+        /*Constructor por buenas practicas*/
     }
     
-    public static int sumaRecursiva(int n)
-    {   if (n < 10){
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = 0;
+        System.out.print("Ingrese los números: ");
+        x = sc.nextInt();
+        System.out.println("La suma es = " + sumaRecursiva(x) + "\n");
+    }
+    
+    public static int sumaRecursiva(int n) {
+        if (n < 10) {//x=20
             return n;
         }
-        return sumaRecursiva(n/10)+(n%10); 
-    }//¿Te ha funcionado o no?        
+        return sumaRecursiva(n/10)+(n%10);//2 
+    }
 }
